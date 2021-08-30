@@ -322,6 +322,12 @@ func parseAlbumItem(albumItem interface{}) *AlbumItem {
 					}
 				}
 			}
+			if len(album.Artists) == 0 {
+				// no browseID
+				if artistName := getValue(runs, path{2, "text"}); artistName != nil {
+					album.Artists = []Artist{{Name: artistName.(string)}}
+				}
+			}
 			length := len(runs.([]interface{}))
 			if length != 0 {
 				if year := getValue(runs.([]interface{})[length-1], path{"text"}); year != nil {
@@ -412,7 +418,7 @@ func parseVideoItem(videoItem interface{}) *VideoItem {
 	if info2 := getValue(videoItem, path{"musicResponsiveListItemRenderer", "flexColumns", 1, "musicResponsiveListItemFlexColumnRenderer", "text", "runs"}); info2 != nil {
 		for _, run := range info2.([]interface{}) {
 			if pageType := getValue(run, path{"navigationEndpoint", "browseEndpoint", "browseEndpointContextSupportedConfigs", "browseEndpointContextMusicConfig", "pageType"}); pageType != nil {
-				if pageType.(string) == "MUSIC_PAGE_TYPE_ARTIST" {
+				if pageType.(string) == "MUSIC_PAGE_TYPE_ARTIST" || pageType.(string) == "MUSIC_PAGE_TYPE_USER_CHANNEL" {
 					artist := Artist{}
 					if name := getValue(run, path{"text"}); name != nil {
 						artist.Name = name.(string)
