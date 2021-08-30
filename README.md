@@ -29,87 +29,91 @@ func main() {
 {
   "tracks":[
     {
-      "videoId":"LdTkeqDLNP4",
-      "playlistId":"RDAMVMLdTkeqDLNP4",
-      "title":"Streaky",
+      "videoId":"5vidYMzCduk",
+      "playlistId":"RDAMVM5vidYMzCduk",
+      "title":"Summer Vibes",
       "artists":[
         {
-          "name":"Death Grips",
-          "id":"UCvM75EuDkJE-65aH5rkfWmg"
+          "name":"The Vibest",
+          "id":"UCpca2RfGwguVVCZXjK7hc5t3g"
+        },
+        {
+          "name":"LZY.",
+          "id":"UC8usDEBiYET4giH1f0e3r7w"
         }
       ],
       "album":{
-        "name":"Year Of The Snitch",
-        "id":"MPREb_lVa6ZUh2pzt"
+        "name":"Summer Vibes",
+        "id":"MPREb_hWNtpxDSsbB"
       },
-      "duration":"2:57",
+      "duration":196,
       "isExplicit":false,
       "thumbnails":[
         {
-          "url":"https://lh3.googleusercontent.com/2casvjuOmQ3rtzgWjzQX-JMhB-OZu9nsg_vzqBDCviHg8hYoD_O_P38TjbvwfT2AArgn39pKuL4UqMlQ=w60-h60-l90-rj",
+          "url":"https://lh3.googleusercontent.com/FcL0_YTDsRez1YxlGKLrRxPCa4SS3eGB-rp-t8aIIQZaIwYwSoUZ9vDT2qj1B0AByNYyrc_rJ4GSbIZzuw=w60-h60-l90-rj",
           "width":60,
           "height":60
         },
         {
-          "url":"https://lh3.googleusercontent.com/2casvjuOmQ3rtzgWjzQX-JMhB-OZu9nsg_vzqBDCviHg8hYoD_O_P38TjbvwfT2AArgn39pKuL4UqMlQ=w120-h120-l90-rj",
+          "url":"https://lh3.googleusercontent.com/FcL0_YTDsRez1YxlGKLrRxPCa4SS3eGB-rp-t8aIIQZaIwYwSoUZ9vDT2qj1B0AByNYyrc_rJ4GSbIZzuw=w120-h120-l90-rj",
           "width":120,
           "height":120
         }
       ]
     },
     {
-      "videoId":"YsSDJ9lkWSk",
-      "playlistId":"RDAMVMYsSDJ9lkWSk",
-      "title":"Government Plates",
+      "videoId":"3wQjpZiHlwY",
+      "playlistId":"RDAMVM3wQjpZiHlwY",
+      "title":"Summer Vibes",
       "artists":[
         {
-          "name":"Death Grips",
-          "id":"UCvM75EuDkJE-65aH5rkfWmg"
+          "name":"Mylène \u0026 Rosanne",
+          "id":"UC5G0ghL0bECKwQqr6Q8qQNg"
         }
       ],
       "album":{
-        "name":"Government Plates",
-        "id":"MPREb_qRwFpD0q0JA"
+        "name":"Summer Vibes",
+        "id":"MPREb_vVMWP143xCH"
       },
-      "duration":"2:42",
-      "isExplicit":true,
+      "duration":198,
+      "isExplicit":false,
       "thumbnails":[
         {
-          "url":"https://lh3.googleusercontent.com/sx0DgmYSEp8xPldr5rYZkxlFBg89AU9V-yLxKdgZhPkssi4vvvZnkdq6FhWqxo9xB0qrc3Hau2gGDFg=w60-h60-l90-rj",
+          "url":"https://lh3.googleusercontent.com/hKF17YbojU-cTTiPtPTQmrbGJ5tE42m7mClzrUly-OoMc5AyWsjEW14C61ISd9pAEHqAH4jtvnfRmrQ=w60-h60-l90-rj",
           "width":60,
           "height":60
         },
         {
-          "url":"https://lh3.googleusercontent.com/sx0DgmYSEp8xPldr5rYZkxlFBg89AU9V-yLxKdgZhPkssi4vvvZnkdq6FhWqxo9xB0qrc3Hau2gGDFg=w120-h120-l90-rj",
+          "url":"https://lh3.googleusercontent.com/hKF17YbojU-cTTiPtPTQmrbGJ5tE42m7mClzrUly-OoMc5AyWsjEW14C61ISd9pAEHqAH4jtvnfRmrQ=w120-h120-l90-rj",
           "width":120,
           "height":120
         }
       ]
     },
     {
-      "videoId":"KBEA6ZGzhbk",
-      "playlistId":"RDAMVMKBEA6ZGzhbk",
-      "title":"Up My Sleeves",
+      "videoId":"KH916UU3DhQ",
+      "playlistId":"RDAMVMKH916UU3DhQ",
+      "title":"Summer Vibes",
       "artists":[
         {
-          "name":"Death Grips",
-          "id":"UCvM75EuDkJE-65aH5rkfWmg"
+          "name":"Dejan S",
+          "id":"UCIN8xHW7GHYL6qw7-SHWUrA"
         }
       ],
       "album":{
-        "name":"The Powers That B",
-        "id":"MPREb_6KTedIfvZMt"
+        "name":"Chords",
+        "id":"MPREb_7ngvy4Oe3gB"
       },
-      "duration":"5:16",
-      "isExplicit":true,
+      "duration":264,
+      "isExplicit":false,
       "thumbnails":[
         {
-          "url":"https://lh3.googleusercontent.com/hpZ66X3wL9T66abAPjP5x4v-a6W-Nkk6hrJ6HIIIMtoBx9YyW1H26Ax3-peirP84uMCbrIvw-FCoZSGk=w60-h60-l90-rj",
+          "url":"https://lh3.googleusercontent.com/aByfvRbI1AHF9fJLi9vIR16m3EoHk8q_XhzRhFw-I5-fu9HKU05fa8Zu_Pwaofx7X9UDk_lzUXYCtpJRJA=w60-h60-l90-rj",
           "width":60,
           "height":60
         },
         {
-          "url":"https://lh3.googleusercontent.com/hpZ66X3wL9T66abAPjP5x4v-a6W-Nkk6hrJ6HIIIMtoBx9YyW1H26Ax3-peirP84uMCbrIvw-FCoZSGk=w120-h120-l90-rj",
+          "url":"https://lh3.googleusercontent.com/aByfvRbI1AHF9fJLi9vIR16m3EoHk8q_XhzRhFw-I5-fu9HKU05fa8Zu_Pwaofx7X9UDk_lzUXYCtpJRJA=w120-h120-l90-rj",
           "width":120,
           "height":120
         }
@@ -118,72 +122,54 @@ func main() {
   ],
   "artists":[
     {
-      "browseId":"UCvM75EuDkJE-65aH5rkfWmg",
-      "artist":"Death Grips",
-      "shuffleId":"RDAOIa469pUbW1R4pxYoy_l_NQ",
-      "radioId":"RDAOIa469pUbW1R4pxYoy_l_NQ",
+      "browseId":"UCSU4CYKzBxdemZASnAMumbQ",
+      "artist":"Summer vibes",
+      "shuffleId":"RDAOBVHasxZj8-yv-IEuQYp2UQ",
+      "radioId":"RDAOBVHasxZj8-yv-IEuQYp2UQ",
       "thumbnails":[
         {
-          "url":"https://lh3.googleusercontent.com/boo3K8l_2EoOXj18QzaEMlK7ecI8V6WtSvXpCjTbySGH_mL8kxHWl-h2yQAEcpZEfdfr71VJ-eslcqU=w60-h60-p-l90-rj",
+          "url":"https://lh3.googleusercontent.com/AErY4X5cICvuRrT0M-GEKT3t8QPYTHsSTr0Ng9WlLTw8atvzdoS5woyi0WMVWqrlQ1oyXGmJzXAkXD_O=w60-h60-l90-rj",
           "width":60,
           "height":60
         },
         {
-          "url":"https://lh3.googleusercontent.com/boo3K8l_2EoOXj18QzaEMlK7ecI8V6WtSvXpCjTbySGH_mL8kxHWl-h2yQAEcpZEfdfr71VJ-eslcqU=w120-h120-p-l90-rj",
+          "url":"https://lh3.googleusercontent.com/AErY4X5cICvuRrT0M-GEKT3t8QPYTHsSTr0Ng9WlLTw8atvzdoS5woyi0WMVWqrlQ1oyXGmJzXAkXD_O=w120-h120-l90-rj",
           "width":120,
           "height":120
         }
       ]
     },
     {
-      "browseId":"UCpFDrI9UAMp6cpwtZwzUg-g",
-      "artist":"The Bug",
-      "shuffleId":"RDAOCqmlt0lB6uJa2xKMY-ppOw",
-      "radioId":"RDAOCqmlt0lB6uJa2xKMY-ppOw",
+      "browseId":"UCCWUf6HxTNr7J2UVbt6tRQg",
+      "artist":"Mauve",
+      "shuffleId":"RDAOtnZvjIDCvguZSA2cHrqHUQ",
+      "radioId":"RDAOtnZvjIDCvguZSA2cHrqHUQ",
       "thumbnails":[
         {
-          "url":"https://lh3.googleusercontent.com/ICmQwBidmunTxvAtsyZeFKUUOmmM9_BL8DecU0zHgBASOR3JumnQKpLFzXH3XqSS0KC-5vXLXPn-TY2T=w60-h60-l90-rj",
+          "url":"https://lh3.googleusercontent.com/9DFl4mOmbQ72aAGke7VYV51rLniQkbO1BZ3n2vSPa06tN_8vGPx2MmpAfIQCNx0TvIKCMRO-8KqhjA=w60-h60-p-l90-rj",
           "width":60,
           "height":60
         },
         {
-          "url":"https://lh3.googleusercontent.com/ICmQwBidmunTxvAtsyZeFKUUOmmM9_BL8DecU0zHgBASOR3JumnQKpLFzXH3XqSS0KC-5vXLXPn-TY2T=w120-h120-l90-rj",
+          "url":"https://lh3.googleusercontent.com/9DFl4mOmbQ72aAGke7VYV51rLniQkbO1BZ3n2vSPa06tN_8vGPx2MmpAfIQCNx0TvIKCMRO-8KqhjA=w120-h120-p-l90-rj",
           "width":120,
           "height":120
         }
       ]
     },
     {
-      "browseId":"UCrg2LfxablyfpYkD75hDxMA",
-      "artist":"Kero Kero Bonito",
-      "shuffleId":"RDAOWXjw4GeAz3E3rzHqNWS52Q",
-      "radioId":"RDAOWXjw4GeAz3E3rzHqNWS52Q",
+      "browseId":"UCRuLdiD8id_rOlYAx6wS4xQ",
+      "artist":"Retro Jungle",
+      "shuffleId":"RDAOEWNnLW5XDUk8u-1xG27CWQ",
+      "radioId":"RDAOEWNnLW5XDUk8u-1xG27CWQ",
       "thumbnails":[
         {
-          "url":"https://lh3.googleusercontent.com/oUJfc9sL7EM1wKEGO07ctB7HEUMLC6cnjXacebnA7cIQYEwpgKS6iaeaJF8hdiDctBgPo0Cinbt_G6Yq=w60-h60-l90-rj",
+          "url":"https://lh3.googleusercontent.com/0eFg4fksKrb0hTG97ni-kdf2mleYjyolNfDQZLCel1KTfs7wHu01kFZmEUuKBDXxjT9v2m-O4E-3Eac=w60-h60-l90-rj",
           "width":60,
           "height":60
         },
         {
-          "url":"https://lh3.googleusercontent.com/oUJfc9sL7EM1wKEGO07ctB7HEUMLC6cnjXacebnA7cIQYEwpgKS6iaeaJF8hdiDctBgPo0Cinbt_G6Yq=w120-h120-l90-rj",
-          "width":120,
-          "height":120
-        }
-      ]
-    },
-    {
-      "browseId":"UCIzvaEjamDYR85oxnqAB0eQ",
-      "artist":"TNGHT",
-      "shuffleId":"RDAOYh5LQzA9VF5UJn5C65__0Q",
-      "radioId":"RDAOYh5LQzA9VF5UJn5C65__0Q",
-      "thumbnails":[
-        {
-          "url":"https://lh3.googleusercontent.com/b03Ha1rd4C81J0y5-YPFnCF4tEMCpVnRBMGB8BQa2E_dkvy1P9Jm3Gk5mc4uXgGTuQyJ7LD5JPNSibSM=w60-h60-p-l90-rj",
-          "width":60,
-          "height":60
-        },
-        {
-          "url":"https://lh3.googleusercontent.com/b03Ha1rd4C81J0y5-YPFnCF4tEMCpVnRBMGB8BQa2E_dkvy1P9Jm3Gk5mc4uXgGTuQyJ7LD5JPNSibSM=w120-h120-p-l90-rj",
+          "url":"https://lh3.googleusercontent.com/0eFg4fksKrb0hTG97ni-kdf2mleYjyolNfDQZLCel1KTfs7wHu01kFZmEUuKBDXxjT9v2m-O4E-3Eac=w120-h120-l90-rj",
           "width":120,
           "height":120
         }
@@ -192,105 +178,105 @@ func main() {
   ],
   "albums":[
     {
-      "browseId":"MPREb_FCRKNFJVb1t",
-      "title":"No Love Deep Web",
-      "type":"Album",
-      "artists":[
-        {
-          "name":"Death Grips",
-          "id":"UCvM75EuDkJE-65aH5rkfWmg"
-        }
-      ],
-      "year":"2012",
-      "isExplicit":true,
-      "thumbnails":[
-        {
-          "url":"https://lh3.googleusercontent.com/RXF4F3ptT_mOITf70OiHipxZ9MWYwqOXxcVNZzswii928wIbTXloel2ngFTtfckhN79aQ41YN1Y7Orl7=w60-h60-l90-rj",
-          "width":60,
-          "height":60
-        },
-        {
-          "url":"https://lh3.googleusercontent.com/RXF4F3ptT_mOITf70OiHipxZ9MWYwqOXxcVNZzswii928wIbTXloel2ngFTtfckhN79aQ41YN1Y7Orl7=w120-h120-l90-rj",
-          "width":120,
-          "height":120
-        },
-        {
-          "url":"https://lh3.googleusercontent.com/RXF4F3ptT_mOITf70OiHipxZ9MWYwqOXxcVNZzswii928wIbTXloel2ngFTtfckhN79aQ41YN1Y7Orl7=w226-h226-l90-rj",
-          "width":226,
-          "height":226
-        },
-        {
-          "url":"https://lh3.googleusercontent.com/RXF4F3ptT_mOITf70OiHipxZ9MWYwqOXxcVNZzswii928wIbTXloel2ngFTtfckhN79aQ41YN1Y7Orl7=w544-h544-l90-rj",
-          "width":544,
-          "height":544
-        }
-      ]
-    },
-    {
-      "browseId":"MPREb_BL9sWaZWAUE",
-      "title":"The Money Store",
-      "type":"Album",
-      "artists":[
-        {
-          "name":"Death Grips",
-          "id":"UCvM75EuDkJE-65aH5rkfWmg"
-        }
-      ],
-      "year":"2012",
-      "isExplicit":true,
-      "thumbnails":[
-        {
-          "url":"https://lh3.googleusercontent.com/WmWd-wg3LsIjvefwD2VvfqCeFLMmCTZlj8QlGSL373bonYFy_SCZK_qsWBIfRF7vbl3aU0GTGEAErSs=w60-h60-l90-rj",
-          "width":60,
-          "height":60
-        },
-        {
-          "url":"https://lh3.googleusercontent.com/WmWd-wg3LsIjvefwD2VvfqCeFLMmCTZlj8QlGSL373bonYFy_SCZK_qsWBIfRF7vbl3aU0GTGEAErSs=w120-h120-l90-rj",
-          "width":120,
-          "height":120
-        },
-        {
-          "url":"https://lh3.googleusercontent.com/WmWd-wg3LsIjvefwD2VvfqCeFLMmCTZlj8QlGSL373bonYFy_SCZK_qsWBIfRF7vbl3aU0GTGEAErSs=w226-h226-l90-rj",
-          "width":226,
-          "height":226
-        },
-        {
-          "url":"https://lh3.googleusercontent.com/WmWd-wg3LsIjvefwD2VvfqCeFLMmCTZlj8QlGSL373bonYFy_SCZK_qsWBIfRF7vbl3aU0GTGEAErSs=w544-h544-l90-rj",
-          "width":544,
-          "height":544
-        }
-      ]
-    },
-    {
-      "browseId":"MPREb_D89UwANNyA9",
-      "title":"Black Paint",
+      "browseId":"MPREb_AYKLwswJX9L",
+      "title":"Summer Vibes",
       "type":"Single",
       "artists":[
         {
-          "name":"Death Grips",
-          "id":"UCvM75EuDkJE-65aH5rkfWmg"
+          "name":"Atyken",
+          "id":""
         }
       ],
-      "year":"2018",
+      "year":"2021",
       "isExplicit":false,
       "thumbnails":[
         {
-          "url":"https://lh3.googleusercontent.com/2casvjuOmQ3rtzgWjzQX-JMhB-OZu9nsg_vzqBDCviHg8hYoD_O_P38TjbvwfT2AArgn39pKuL4UqMlQ=w60-h60-l90-rj",
+          "url":"https://lh3.googleusercontent.com/Gh4RB90F2gHsK-X_kWNRKgoFCOhnogD2X9Hz2IeD6FkWDAxrs_U_ZfyST7NwiTxyHTDm0Bq64rSA-PRm=w60-h60-l90-rj",
           "width":60,
           "height":60
         },
         {
-          "url":"https://lh3.googleusercontent.com/2casvjuOmQ3rtzgWjzQX-JMhB-OZu9nsg_vzqBDCviHg8hYoD_O_P38TjbvwfT2AArgn39pKuL4UqMlQ=w120-h120-l90-rj",
+          "url":"https://lh3.googleusercontent.com/Gh4RB90F2gHsK-X_kWNRKgoFCOhnogD2X9Hz2IeD6FkWDAxrs_U_ZfyST7NwiTxyHTDm0Bq64rSA-PRm=w120-h120-l90-rj",
           "width":120,
           "height":120
         },
         {
-          "url":"https://lh3.googleusercontent.com/2casvjuOmQ3rtzgWjzQX-JMhB-OZu9nsg_vzqBDCviHg8hYoD_O_P38TjbvwfT2AArgn39pKuL4UqMlQ=w226-h226-l90-rj",
+          "url":"https://lh3.googleusercontent.com/Gh4RB90F2gHsK-X_kWNRKgoFCOhnogD2X9Hz2IeD6FkWDAxrs_U_ZfyST7NwiTxyHTDm0Bq64rSA-PRm=w226-h226-l90-rj",
           "width":226,
           "height":226
         },
         {
-          "url":"https://lh3.googleusercontent.com/2casvjuOmQ3rtzgWjzQX-JMhB-OZu9nsg_vzqBDCviHg8hYoD_O_P38TjbvwfT2AArgn39pKuL4UqMlQ=w544-h544-l90-rj",
+          "url":"https://lh3.googleusercontent.com/Gh4RB90F2gHsK-X_kWNRKgoFCOhnogD2X9Hz2IeD6FkWDAxrs_U_ZfyST7NwiTxyHTDm0Bq64rSA-PRm=w544-h544-l90-rj",
+          "width":544,
+          "height":544
+        }
+      ]
+    },
+    {
+      "browseId":"MPREb_Su87ovU5iGS",
+      "title":"Summer Vibes, Vol. 1",
+      "type":"Album",
+      "artists":[
+        {
+          "name":"Various Artists",
+          "id":""
+        }
+      ],
+      "year":"2021",
+      "isExplicit":false,
+      "thumbnails":[
+        {
+          "url":"https://lh3.googleusercontent.com/VJPl48E179gQa-UWfqN-vWu3KIbYo195pIXOCN3Xt2hoLtYdkWQ3J7G5uo-9pF0_Db_7IL0vmWjP0Zwi=w60-h60-l90-rj",
+          "width":60,
+          "height":60
+        },
+        {
+          "url":"https://lh3.googleusercontent.com/VJPl48E179gQa-UWfqN-vWu3KIbYo195pIXOCN3Xt2hoLtYdkWQ3J7G5uo-9pF0_Db_7IL0vmWjP0Zwi=w120-h120-l90-rj",
+          "width":120,
+          "height":120
+        },
+        {
+          "url":"https://lh3.googleusercontent.com/VJPl48E179gQa-UWfqN-vWu3KIbYo195pIXOCN3Xt2hoLtYdkWQ3J7G5uo-9pF0_Db_7IL0vmWjP0Zwi=w226-h226-l90-rj",
+          "width":226,
+          "height":226
+        },
+        {
+          "url":"https://lh3.googleusercontent.com/VJPl48E179gQa-UWfqN-vWu3KIbYo195pIXOCN3Xt2hoLtYdkWQ3J7G5uo-9pF0_Db_7IL0vmWjP0Zwi=w544-h544-l90-rj",
+          "width":544,
+          "height":544
+        }
+      ]
+    },
+    {
+      "browseId":"MPREb_KyjqW5Y4IFU",
+      "title":"Summer Vibes, Vol. 3",
+      "type":"EP",
+      "artists":[
+        {
+          "name":"Sir Henrik",
+          "id":"UC9O4GQr91AMhTKB_mDR7AvA"
+        }
+      ],
+      "year":"2021",
+      "isExplicit":false,
+      "thumbnails":[
+        {
+          "url":"https://lh3.googleusercontent.com/CrAaclEP2m2rCKE2xldx-cDb2jBYOWT72cZs55JgAL8JG34XJCli_9UBVMrM3cyjJexcjuzifyhLq6vHdQ=w60-h60-l90-rj",
+          "width":60,
+          "height":60
+        },
+        {
+          "url":"https://lh3.googleusercontent.com/CrAaclEP2m2rCKE2xldx-cDb2jBYOWT72cZs55JgAL8JG34XJCli_9UBVMrM3cyjJexcjuzifyhLq6vHdQ=w120-h120-l90-rj",
+          "width":120,
+          "height":120
+        },
+        {
+          "url":"https://lh3.googleusercontent.com/CrAaclEP2m2rCKE2xldx-cDb2jBYOWT72cZs55JgAL8JG34XJCli_9UBVMrM3cyjJexcjuzifyhLq6vHdQ=w226-h226-l90-rj",
+          "width":226,
+          "height":226
+        },
+        {
+          "url":"https://lh3.googleusercontent.com/CrAaclEP2m2rCKE2xldx-cDb2jBYOWT72cZs55JgAL8JG34XJCli_9UBVMrM3cyjJexcjuzifyhLq6vHdQ=w544-h544-l90-rj",
           "width":544,
           "height":544
         }
@@ -299,131 +285,159 @@ func main() {
   ],
   "playlists":[
     {
-      "browseId":"VLPLI7cAsCDsB3F0qHcVGWWAIQAtsvnyhsl0",
-      "title":"Death Grips Discography",
-      "author":"flubberfan2006",
-      "itemCount":"140 songs",
+      "browseId":"VLRDCLAK5uy_mycqfrKYZscut0P3euskox4nw16DtjUxs",
+      "title":"Summer of Rap",
+      "author":"YouTube Music",
+      "itemCount":"59 songs",
       "thumbnails":[
         {
-          "url":"https://yt3.ggpht.com/lyIJJtfJ83ek2QyqnAazs5mh16Deoip1gqVEfMaFd9hCxVzukesU_1KrfbbD3rpneiqpB6quUzs=s192",
-          "width":192,
-          "height":192
+          "url":"https://lh3.googleusercontent.com/fB_ICXdPVAkmmrJrH1JBy8y6t6jdMxkeYlH9qF-AEkq06PmfTHgeXcd3xXLZD2PnnPnWRuTqjRHU4fI3=w60-h60-l90-rj",
+          "width":60,
+          "height":60
         },
         {
-          "url":"https://yt3.ggpht.com/lyIJJtfJ83ek2QyqnAazs5mh16Deoip1gqVEfMaFd9hCxVzukesU_1KrfbbD3rpneiqpB6quUzs=s576",
-          "width":576,
-          "height":576
+          "url":"https://lh3.googleusercontent.com/fB_ICXdPVAkmmrJrH1JBy8y6t6jdMxkeYlH9qF-AEkq06PmfTHgeXcd3xXLZD2PnnPnWRuTqjRHU4fI3=w120-h120-l90-rj",
+          "width":120,
+          "height":120
         },
         {
-          "url":"https://yt3.ggpht.com/lyIJJtfJ83ek2QyqnAazs5mh16Deoip1gqVEfMaFd9hCxVzukesU_1KrfbbD3rpneiqpB6quUzs=s1200",
-          "width":1200,
-          "height":1200
+          "url":"https://lh3.googleusercontent.com/fB_ICXdPVAkmmrJrH1JBy8y6t6jdMxkeYlH9qF-AEkq06PmfTHgeXcd3xXLZD2PnnPnWRuTqjRHU4fI3=w226-h226-l90-rj",
+          "width":226,
+          "height":226
+        },
+        {
+          "url":"https://lh3.googleusercontent.com/fB_ICXdPVAkmmrJrH1JBy8y6t6jdMxkeYlH9qF-AEkq06PmfTHgeXcd3xXLZD2PnnPnWRuTqjRHU4fI3=w544-h544-l90-rj",
+          "width":544,
+          "height":544
         }
       ]
     },
     {
-      "browseId":"VLPL_tgtrkztDm-WAEZZoK0d6Q5PZ5mJKw6V",
-      "title":"Death Grips essentials",
-      "author":"FoxInShadow",
-      "itemCount":"43 songs",
+      "browseId":"VLPLasIJTg1l6iXQXeODV-K8qm1rHdjTP5pd",
+      "title":"🌴SUMMER VIBES",
+      "author":"Rammor",
+      "itemCount":"16 songs",
       "thumbnails":[
         {
-          "url":"https://yt3.ggpht.com/Du-ToeL4gSKH901rjNWbHbOkbdZ3-Rc8VCIlGIdtIfXTVLGqbskazl0XuHKdjJSiV-zEVH-qcIc=s192",
-          "width":192,
-          "height":192
-        },
-        {
-          "url":"https://yt3.ggpht.com/Du-ToeL4gSKH901rjNWbHbOkbdZ3-Rc8VCIlGIdtIfXTVLGqbskazl0XuHKdjJSiV-zEVH-qcIc=s576",
-          "width":576,
-          "height":576
-        },
-        {
-          "url":"https://yt3.ggpht.com/Du-ToeL4gSKH901rjNWbHbOkbdZ3-Rc8VCIlGIdtIfXTVLGqbskazl0XuHKdjJSiV-zEVH-qcIc=s1200",
-          "width":1200,
-          "height":1200
-        }
-      ]
-    },
-    {
-      "browseId":"VLPLNsIB5OmdsLoCvESpB2k2Cik09uGy3K9I",
-      "title":"Death Grips - Steroids (Crouching Tiger Hidden Gabber Megamix)",
-      "author":"Tsuaretehn_Espira",
-      "itemCount":"7 songs",
-      "thumbnails":[
-        {
-          "url":"https://i.ytimg.com/vi/UMh6ZySqP-o/sddefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg\u0026rs=AMzJL3lm5L1XyhHYIRNfaMBGFZNXfE9lRw",
+          "url":"https://i.ytimg.com/vi/a8vLltFM8kQ/sddefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg\u0026rs=AMzJL3kRJ4oN3FQ6Q9ujnc1CZYYLlz2MtA",
           "width":400,
           "height":400
         },
         {
-          "url":"https://i.ytimg.com/vi/UMh6ZySqP-o/hq720.jpg?sqp=-oaymwEXCKAGEMIDIAQqCwjVARCqCBh4INgESFo\u0026rs=AMzJL3k2YtTE02YvnVM4q0TLFgIVWXCGxg",
+          "url":"https://i.ytimg.com/vi/a8vLltFM8kQ/hq720.jpg?sqp=-oaymwEXCKAGEMIDIAQqCwjVARCqCBh4INgESFo\u0026rs=AMzJL3mQs7PeBqYwPqF2PtwnXxoChcSjfQ",
           "width":800,
           "height":800
         },
         {
-          "url":"https://i.ytimg.com/vi/UMh6ZySqP-o/hq720.jpg?sqp=-oaymwEXCNUGEOADIAQqCwjVARCqCBh4INgESFo\u0026rs=AMzJL3m9cJM8j-WwtpioXdlv6GmiepLgLg",
+          "url":"https://i.ytimg.com/vi/a8vLltFM8kQ/hq720.jpg?sqp=-oaymwEXCNUGEOADIAQqCwjVARCqCBh4INgESFo\u0026rs=AMzJL3lkOgMac7iXDUP3yZfZGfUUYuh_2w",
           "width":853,
           "height":853
+        }
+      ]
+    },
+    {
+      "browseId":"VLPLmOk00V-7RN6_6tsHyVsRLqQ-wj7rqUbq",
+      "title":"Hot Summer Songs 2021 - Best Summer Vibes Music 2021 to 2022",
+      "author":"Redlist Music",
+      "itemCount":"80 songs",
+      "thumbnails":[
+        {
+          "url":"https://yt3.ggpht.com/7eN41ekTvxDg6B5AwloJoRdce69eE6UvYhDPRcsUFqd073I1LvL_X0DLLqhZZKRbwsZxIA2u27c=s192",
+          "width":192,
+          "height":192
+        },
+        {
+          "url":"https://yt3.ggpht.com/7eN41ekTvxDg6B5AwloJoRdce69eE6UvYhDPRcsUFqd073I1LvL_X0DLLqhZZKRbwsZxIA2u27c=s576",
+          "width":576,
+          "height":576
+        },
+        {
+          "url":"https://yt3.ggpht.com/7eN41ekTvxDg6B5AwloJoRdce69eE6UvYhDPRcsUFqd073I1LvL_X0DLLqhZZKRbwsZxIA2u27c=s1200",
+          "width":1200,
+          "height":1200
+        }
+      ]
+    },
+    {
+      "browseId":"VLPLa2a9FJY91_2BEPSAuRdQMZfXC8OKszgP",
+      "title":"☀ Summer Vibes 2021 ☀",
+      "author":"The Vibe Guide",
+      "itemCount":"296 songs",
+      "thumbnails":[
+        {
+          "url":"https://yt3.ggpht.com/Ja5DzoZ9EcFtJWxm1UsYxmaqytxjByscPYmAwipp7wm530ZWjYhGOHxbtbdmy6Q4WRp3A4p1GA=s192",
+          "width":192,
+          "height":192
+        },
+        {
+          "url":"https://yt3.ggpht.com/Ja5DzoZ9EcFtJWxm1UsYxmaqytxjByscPYmAwipp7wm530ZWjYhGOHxbtbdmy6Q4WRp3A4p1GA=s576",
+          "width":576,
+          "height":576
+        },
+        {
+          "url":"https://yt3.ggpht.com/Ja5DzoZ9EcFtJWxm1UsYxmaqytxjByscPYmAwipp7wm530ZWjYhGOHxbtbdmy6Q4WRp3A4p1GA=s1200",
+          "width":1200,
+          "height":1200
         }
       ]
     }
   ],
   "videos":[
     {
-      "videoId":"iPtPo8Sa3NE",
-      "playlistId":"RDAMVMiPtPo8Sa3NE",
-      "title":"Death Grips - Exmilitary [Full Mixtape]",
+      "videoId":"YjYjrd_ozQw",
+      "playlistId":"RDAMVMYjYjrd_ozQw",
+      "title":"Kygo, Avicii, Robin Schulz, Felix Jaehn, Alok, Lost Frequencies - Summer Vibes Deep House Mix",
       "artists":[
         {
-          "name":"An0rhu",
-          "id":"UCqktZCXcZQf1irrzkertseQ"
+          "name":"Rammor",
+          "id":"UCeOuY27OfgZ5n3F581yV8uQ"
         }
       ],
-      "views":"5.5M views",
-      "duration":"48:31",
+      "views":"12M views",
+      "duration":2590,
       "thumbnails":[
         {
-          "url":"https://i.ytimg.com/vi/iPtPo8Sa3NE/sddefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg\u0026rs=AMzJL3kKmQiuO_3TTh_9Qu1Ac-HiajpISQ",
+          "url":"https://i.ytimg.com/vi/YjYjrd_ozQw/sddefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg\u0026rs=AMzJL3kQZZz_ekikeAwD08C_CJrIO5k9zA",
           "width":400,
           "height":400
         }
       ]
     },
     {
-      "videoId":"eu-MFuqymsc",
-      "playlistId":"RDAMVMeu-MFuqymsc",
-      "title":"Death Grips - NO LOVE DEEP WEB (Full Album)",
+      "videoId":"JS6uhdQJo4A",
+      "playlistId":"RDAMVMJS6uhdQJo4A",
+      "title":"Avicii, Jonas Blue, Kygo, Calvin Harris, Alok, Robin Schulz - Summer Vibes Deep House Mix",
       "artists":[
         {
-          "name":"Death Grips",
-          "id":"UCuq1H-HXWoW4JL-hX5bWxzw"
+          "name":"Rammor",
+          "id":"UCeOuY27OfgZ5n3F581yV8uQ"
         }
       ],
-      "views":"1.2M views",
-      "duration":"45:48",
+      "views":"27M views",
+      "duration":3403,
       "thumbnails":[
         {
-          "url":"https://i.ytimg.com/vi/eu-MFuqymsc/sddefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg\u0026rs=AMzJL3mFRLwkFtB-cTJ8_mkElBXSSh3MnA",
+          "url":"https://i.ytimg.com/vi/JS6uhdQJo4A/sddefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg\u0026rs=AMzJL3mmmvNk-F5NHTD2Qn5ypXGEBXaMIw",
           "width":400,
           "height":400
         }
       ]
     },
     {
-      "videoId":"sticXkHxZC4",
-      "playlistId":"RDAMVMsticXkHxZC4",
-      "title":"I've Seen Footage",
+      "videoId":"a8vLltFM8kQ",
+      "playlistId":"RDAMVMa8vLltFM8kQ",
+      "title":"Kygo, Martin Garrix, Jonas Blue, Robin Schulz, Lost Frequencies, Gryffin - Summer Vibes Mix Rammor",
       "artists":[
         {
-          "name":"Death Grips",
-          "id":"UCvM75EuDkJE-65aH5rkfWmg"
+          "name":"Rammor",
+          "id":"UCeOuY27OfgZ5n3F581yV8uQ"
         }
       ],
-      "views":"1.2M views",
-      "duration":"3:22",
+      "views":"72K views",
+      "duration":3025,
       "thumbnails":[
         {
-          "url":"https://i.ytimg.com/vi/sticXkHxZC4/sddefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg\u0026rs=AMzJL3lRYBDh7tM2VlK0t7yj5TJqrfS1jg",
+          "url":"https://i.ytimg.com/vi/a8vLltFM8kQ/sddefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg\u0026rs=AMzJL3kRJ4oN3FQ6Q9ujnc1CZYYLlz2MtA",
           "width":400,
           "height":400
         }

@@ -233,7 +233,7 @@ func parseTrackItem(trackItem interface{}) *TrackItem {
 		length := len(info2.([]interface{}))
 		if length != 0 {
 			if duration := getValue(info2.([]interface{})[length-1], path{"text"}); duration != nil {
-				track.Duration = duration.(string)
+				track.Duration = durationToInt(duration.(string))
 			}
 		}
 	}
@@ -433,7 +433,7 @@ func parseVideoItem(videoItem interface{}) *VideoItem {
 		length := len(info2.([]interface{}))
 		if length != 0 {
 			if duration := getValue(info2.([]interface{})[length-1], path{"text"}); duration != nil {
-				video.Duration = duration.(string)
+				video.Duration = durationToInt(duration.(string))
 			}
 			if views := getValue(info2.([]interface{})[length-3], path{"text"}); views != nil {
 				video.Views = views.(string)

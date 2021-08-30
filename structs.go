@@ -14,7 +14,7 @@ type TrackItem struct {
 	Title      string      `json:"title"`
 	Artists    []Artist    `json:"artists"`
 	Album      Album       `json:"album"`
-	Duration   string      `json:"duration"`
+	Duration   int         `json:"duration"`
 	IsExplicit bool        `json:"isExplicit"`
 	Thumbnails []Thumbnail `json:"thumbnails"`
 }
@@ -51,7 +51,7 @@ type VideoItem struct {
 	Title      string      `json:"title"`
 	Artists    []Artist    `json:"artists"`
 	Views      string      `json:"views"`
-	Duration   string      `json:"duration"`
+	Duration   int         `json:"duration"`
 	Thumbnails []Thumbnail `json:"thumbnails"`
 }
 
