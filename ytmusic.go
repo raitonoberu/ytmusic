@@ -1,6 +1,8 @@
 package ytmusic
 
-import "net/http"
+import (
+	"net/http"
+)
 
 func Search(query string) *SearchClient {
 	return &SearchClient{
@@ -60,4 +62,8 @@ func VideoSearch(query string) *SearchClient {
 		SearchFilter: VideoFilter,
 		HTTPClient:   &http.Client{},
 	}
+}
+
+func GetWatchPlaylist(videoID string) ([]*TrackItem, error) {
+	return getWatchPlaylist(videoID)
 }

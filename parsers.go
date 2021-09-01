@@ -39,7 +39,7 @@ const (
 	videoItemType
 )
 
-func parsePage(page interface{}) (*SearchResult, string) {
+func parseSearchPage(page interface{}) (*SearchResult, string) {
 	result := &SearchResult{}
 	var continuationKey string
 
@@ -249,10 +249,10 @@ func parseTrackItem(trackItem interface{}) *TrackItem {
 				t.URL = turl.(string)
 			}
 			if tw := getValue(thumbnail, path{"width"}); tw != nil {
-				t.Width = tw.(float64)
+				t.Width = int(tw.(float64))
 			}
 			if th := getValue(thumbnail, path{"width"}); th != nil {
-				t.Height = th.(float64)
+				t.Height = int(th.(float64))
 			}
 			track.Thumbnails = append(track.Thumbnails, t)
 		}
@@ -285,10 +285,10 @@ func parseArtistItem(artistItem interface{}) *ArtistItem {
 				t.URL = turl.(string)
 			}
 			if tw := getValue(thumbnail, path{"width"}); tw != nil {
-				t.Width = tw.(float64)
+				t.Width = int(tw.(float64))
 			}
 			if th := getValue(thumbnail, path{"width"}); th != nil {
-				t.Height = th.(float64)
+				t.Height = int(th.(float64))
 			}
 			artist.Thumbnails = append(artist.Thumbnails, t)
 		}
@@ -352,10 +352,10 @@ func parseAlbumItem(albumItem interface{}) *AlbumItem {
 				t.URL = turl.(string)
 			}
 			if tw := getValue(thumbnail, path{"width"}); tw != nil {
-				t.Width = tw.(float64)
+				t.Width = int(tw.(float64))
 			}
 			if th := getValue(thumbnail, path{"width"}); th != nil {
-				t.Height = th.(float64)
+				t.Height = int(th.(float64))
 			}
 			album.Thumbnails = append(album.Thumbnails, t)
 		}
@@ -388,10 +388,10 @@ func parsePlaylistItem(playlistItem interface{}) *PlaylistItem {
 				t.URL = turl.(string)
 			}
 			if tw := getValue(thumbnail, path{"width"}); tw != nil {
-				t.Width = tw.(float64)
+				t.Width = int(tw.(float64))
 			}
 			if th := getValue(thumbnail, path{"width"}); th != nil {
-				t.Height = th.(float64)
+				t.Height = int(th.(float64))
 			}
 			playlist.Thumbnails = append(playlist.Thumbnails, t)
 		}
@@ -447,14 +447,102 @@ func parseVideoItem(videoItem interface{}) *VideoItem {
 				t.URL = turl.(string)
 			}
 			if tw := getValue(thumbnail, path{"width"}); tw != nil {
-				t.Width = tw.(float64)
+				t.Width = int(tw.(float64))
 			}
 			if th := getValue(thumbnail, path{"width"}); th != nil {
-				t.Height = th.(float64)
+				t.Height = int(th.(float64))
 			}
 			video.Thumbnails = append(video.Thumbnails, t)
 		}
 	}
 
 	return video
+}
+
+func parsePlaylistPage(page interface{}) []*TrackItem {
+	var contents interface{}
+	contents = getValue(page, path{"contents", "singleColumnMusicWatchNextResultsRenderer", "tabbedRenderer", "watchNextTabbedResultsRenderer", "tabs", 0, "tabRenderer", "content", "musicQueueRenderer", "content", "playlistPanelRenderer", "contents"})
+	if contents == nil {
+		return nil
+	}
+
+	result := make([]*TrackItem, len(contents.([]interface{})))
+
+	for index, item := range contents.([]interface{}) {
+		result[index] = parsePlaylistTrack(item)
+	}
+	return result
+}
+
+func parsePlaylistTrack(trackItem interface{}) *TrackItem {
+	track := &TrackItem{
+		Thumbnails: nil,
+	}
+
+	if title := getValue(trackItem, path{"playlistPanelVideoRenderer", "title", "runs", 0, "text"}); title != nil {
+		track.Title = title.(string)
+	}
+
+	if info1 := getValue(trackItem, path{"playlistPanelVideoRenderer", "navigationEndpoint", "watchEndpoint"}); info1 != nil {
+		if videoId := getValue(info1, path{"videoId"}); videoId != nil {
+			track.VideoID = videoId.(string)
+		}
+		if playlistId := getValue(info1, path{"playlistId"}); playlistId != nil {
+			track.PlaylistID = playlistId.(string)
+		}
+	}
+
+	if info2 := getValue(trackItem, path{"playlistPanelVideoRenderer", "longBylineText", "runs"}); info2 != nil {
+		for _, run := range info2.([]interface{}) {
+			if pageType := getValue(run, path{"navigationEndpoint", "browseEndpoint", "browseEndpointContextSupportedConfigs", "browseEndpointContextMusicConfig", "pageType"}); pageType != nil {
+				switch pageType.(string) {
+				case "MUSIC_PAGE_TYPE_ARTIST":
+					{
+						artist := Artist{}
+						if name := getValue(run, path{"text"}); name != nil {
+							artist.Name = name.(string)
+						}
+						if id := getValue(run, path{"navigationEndpoint", "browseEndpoint", "browseId"}); id != nil {
+							artist.ID = id.(string)
+						}
+						track.Artists = append(track.Artists, artist)
+					}
+				case "MUSIC_PAGE_TYPE_ALBUM":
+					{
+						if name := getValue(run, path{"text"}); name != nil {
+							track.Album.Name = name.(string)
+						}
+						if id := getValue(run, path{"navigationEndpoint", "browseEndpoint", "browseId"}); id != nil {
+							track.Album.ID = id.(string)
+						}
+					}
+				}
+			}
+		}
+	}
+	if duration := getValue(trackItem, path{"playlistPanelVideoRenderer", "lengthText", "runs", 0, "text"}); duration != nil {
+		track.Duration = durationToInt(duration.(string))
+	}
+	if explicit := getValue(trackItem, path{"playlistPanelVideoRenderer", "badges", 0, "musicInlineBadgeRenderer", "icon", "iconType"}); explicit != nil {
+		if explicit.(string) == "MUSIC_EXPLICIT_BADGE" {
+			track.IsExplicit = true
+		}
+	}
+	if thumbnails := getValue(trackItem, path{"playlistPanelVideoRenderer", "thumbnail", "thumbnails"}); thumbnails != nil {
+		for _, thumbnail := range thumbnails.([]interface{}) {
+			t := Thumbnail{}
+			if turl := getValue(thumbnail, path{"url"}); turl != nil {
+				t.URL = turl.(string)
+			}
+			if tw := getValue(thumbnail, path{"width"}); tw != nil {
+				t.Width = int(tw.(float64))
+			}
+			if th := getValue(thumbnail, path{"width"}); th != nil {
+				t.Height = int(int(th.(float64)))
+			}
+			track.Thumbnails = append(track.Thumbnails, t)
+		}
+	}
+
+	return track
 }

@@ -93,7 +93,7 @@ func (search *SearchClient) Next() (*SearchResult, error) {
 	if err != nil {
 		return nil, err
 	}
-	result, key := parsePage(page)
+	result, key := parseSearchPage(page)
 	if result == nil {
 		return nil, errors.New("couldn't parse page")
 	}

@@ -56,9 +56,9 @@ type VideoItem struct {
 }
 
 type Thumbnail struct {
-	URL    string  `json:"url"`
-	Width  float64 `json:"width"`
-	Height float64 `json:"height"`
+	URL    string `json:"url"`
+	Width  int    `json:"width"`
+	Height int    `json:"height"`
 }
 
 type Album struct {

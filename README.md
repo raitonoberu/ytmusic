@@ -447,3 +447,24 @@ func main() {
 }
 ```
 </details>
+
+Get watch playlist.
+
+```go
+package main
+
+import (
+    "encoding/json"
+    "fmt"
+    "github.com/raitonoberu/ytmusic"
+)
+
+func main() {
+    result, err := ytmusic.GetWatchPlaylist("ljUtuoFt-8c")
+    if err != nil {
+        panic(err)
+    }
+    jsonstr, _ := json.Marshal(result)
+    fmt.Println(string(jsonstr))
+}
+```
