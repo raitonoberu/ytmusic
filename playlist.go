@@ -37,7 +37,7 @@ func getWatchPlaylist(videoID string) ([]*TrackItem, error) {
 		return nil, err
 	}
 	request.Header = requestHeader
-	response, err := http.DefaultClient.Do(request)
+	response, err := HTTPClient.Do(request)
 	if err != nil {
 		return nil, err
 	}

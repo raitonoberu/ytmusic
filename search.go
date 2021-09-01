@@ -15,7 +15,6 @@ type SearchClient struct {
 	Region   string
 
 	SearchFilter SearchFilter
-	HTTPClient   *http.Client
 
 	continuationKey string
 	newPage         bool
@@ -60,7 +59,7 @@ func (search *SearchClient) makeRequest() (interface{}, error) {
 		return nil, err
 	}
 	request.Header = requestHeader
-	response, err := search.HTTPClient.Do(request)
+	response, err := HTTPClient.Do(request)
 	if err != nil {
 		return nil, err
 	}
