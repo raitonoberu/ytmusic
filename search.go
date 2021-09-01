@@ -1,10 +1,7 @@
 package ytmusic
 
 import (
-	"bytes"
-	"encoding/json"
 	"errors"
-	"net/http"
 	"net/url"
 )
 
@@ -21,56 +18,34 @@ type SearchClient struct {
 }
 
 func (search *SearchClient) makeRequest() (interface{}, error) {
-	payload := map[string]interface{}{
-		"context": map[string]map[string]interface{}{
-			"client": {
-				"clientName":    "WEB_REMIX",
-				"clientVersion": "1.20210823.00.00",
-			},
-			"user": {
-				"lockedSafetyMode": false,
-			},
-		},
-	}
-	clientData := payload["context"].(map[string]map[string]interface{})["client"]
-	clientData["hl"] = search.Language
-	clientData["gl"] = search.Region
+	body := map[string]interface{}{}
+
 	if search.continuationKey == "" {
-		payload["query"] = search.Query
+		body["query"] = search.Query
 		if search.SearchFilter != NoFilter {
-			payload["params"] = string(search.SearchFilter)
+			body["params"] = string(search.SearchFilter)
 		}
 	}
 
-	jsonData, err := json.Marshal(payload)
-	if err != nil {
-		return nil, err
-	}
 	params := url.Values{}
-	params.Add("key", searchKey)
 	if search.continuationKey != "" {
 		params.Add("ctoken", search.continuationKey)
 		params.Add("continuation", search.continuationKey)
 		params.Add("type", "next")
 	}
 
-	request, err := http.NewRequest("POST", "https://music.youtube.com/youtubei/v1/search?"+params.Encode(), bytes.NewBuffer(jsonData))
+	page, err := makeRequest(
+		"search",
+		search.Language,
+		search.Region,
+		body,
+		params,
+	)
 	if err != nil {
 		return nil, err
 	}
-	request.Header = requestHeader
-	response, err := HTTPClient.Do(request)
-	if err != nil {
-		return nil, err
-	}
-	defer response.Body.Close()
 
-	var result interface{}
-	err = json.NewDecoder(response.Body).Decode(&result)
-	if err != nil {
-		return nil, err
-	}
-	return result, nil
+	return page, nil
 }
 
 func (search *SearchClient) NextExists() bool {
