@@ -7,8 +7,6 @@ import (
 func getWatchPlaylist(videoID string) ([]*TrackItem, error) {
 	page, err := makeRequest(
 		"next",
-		"en",
-		"US",
 		map[string]interface{}{
 			"videoId":                       videoID,
 			"enablePersistentPlaylistPanel": true,

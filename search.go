@@ -36,8 +36,6 @@ func (search *SearchClient) makeRequest() (interface{}, error) {
 
 	page, err := makeRequest(
 		"search",
-		search.Language,
-		search.Region,
 		body,
 		params,
 	)

@@ -8,7 +8,7 @@ import (
 	"net/url"
 )
 
-func makeRequest(endpoint, language, region string, body map[string]interface{}, params url.Values) (interface{}, error) {
+func makeRequest(endpoint string, body map[string]interface{}, params url.Values) (interface{}, error) {
 	payload := map[string]interface{}{
 		"context": map[string]interface{}{
 			"client": map[string]interface{}{
@@ -18,8 +18,8 @@ func makeRequest(endpoint, language, region string, body map[string]interface{},
 			"user": map[string]interface{}{
 				"lockedSafetyMode": false,
 			},
-			"hl": language,
-			"gl": region,
+			"hl": Language,
+			"gl": Region,
 		},
 	}
 	for key, item := range body {

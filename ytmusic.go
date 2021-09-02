@@ -4,13 +4,13 @@ import (
 	"net/http"
 )
 
+var Language = "en"
+var Region = "US"
 var HTTPClient = &http.Client{}
 
 func Search(query string) *SearchClient {
 	return &SearchClient{
 		Query:        query,
-		Language:     "en",
-		Region:       "US",
 		SearchFilter: NoFilter,
 	}
 }
@@ -18,8 +18,6 @@ func Search(query string) *SearchClient {
 func TrackSearch(query string) *SearchClient {
 	return &SearchClient{
 		Query:        query,
-		Language:     "en",
-		Region:       "US",
 		SearchFilter: TrackFilter,
 	}
 }
@@ -27,8 +25,6 @@ func TrackSearch(query string) *SearchClient {
 func AlbumSearch(query string) *SearchClient {
 	return &SearchClient{
 		Query:        query,
-		Language:     "en",
-		Region:       "US",
 		SearchFilter: AlbumFilter,
 	}
 }
@@ -36,8 +32,6 @@ func AlbumSearch(query string) *SearchClient {
 func ArtistSearch(query string) *SearchClient {
 	return &SearchClient{
 		Query:        query,
-		Language:     "en",
-		Region:       "US",
 		SearchFilter: ArtistFilter,
 	}
 }
@@ -45,8 +39,6 @@ func ArtistSearch(query string) *SearchClient {
 func PlaylistSearch(query string) *SearchClient {
 	return &SearchClient{
 		Query:        query,
-		Language:     "en",
-		Region:       "US",
 		SearchFilter: PlaylistFilter,
 	}
 }
@@ -54,8 +46,6 @@ func PlaylistSearch(query string) *SearchClient {
 func VideoSearch(query string) *SearchClient {
 	return &SearchClient{
 		Query:        query,
-		Language:     "en",
-		Region:       "US",
 		SearchFilter: VideoFilter,
 	}
 }
