@@ -16,20 +16,20 @@ go get github.com/raitonoberu/ytmusic
 package main
 
 import (
-	"encoding/json"
-	"fmt"
-	"github.com/raitonoberu/ytmusic"
+    "encoding/json"
+    "fmt"
+    "github.com/raitonoberu/ytmusic"
 )
 
 func main() {
-	s := ytmusic.Search("death grips")
-	result, err := s.Next()
-	if err != nil {
-		panic(err)
-	}
+    s := ytmusic.Search("death grips")
+    result, err := s.Next()
+    if err != nil {
+        panic(err)
+    }
 
-	jsonstr, _ := json.Marshal(result)
-	fmt.Println(string(jsonstr))
+    jsonstr, _ := json.Marshal(result)
+    fmt.Println(string(jsonstr))
 }
 ```
 
@@ -361,6 +361,7 @@ func main() {
     if err != nil {
         panic(err)
     }
+
     jsonstr, _ := json.Marshal(result)
     fmt.Println(string(jsonstr))
 }
