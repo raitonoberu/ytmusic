@@ -1428,6 +1428,41 @@ func main() {
 ```
 </details>
 
+### Get search suggestions
+
+```go
+package main
+
+import (
+    "fmt"
+    "github.com/raitonoberu/ytmusic"
+)
+
+func main() {
+    result, err := ytmusic.GetSearchSuggestions("fka tw")
+    if err != nil {
+        panic(err)
+    }
+
+    for _, query := range result {
+        fmt.Println(query)
+    }
+}
+```
+<details>
+    <summary>Example result</summary>
+
+```
+fka twigs
+fka twig
+fukk sleep (feat. fka twigs) asap rocky audio
+two weeks fka twigs
+fka twigs two weeks
+fka twigs live
+fka twigs sad day
+```
+</details>
+
 ## Information
 
 I have neither the desire nor the time to port the entire [ytmusicapi](https://github.com/sigma67/ytmusicapi) to Go, so I ported only those functions that I needed. Contributions are welcome, feel free to add missing features.

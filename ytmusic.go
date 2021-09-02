@@ -53,3 +53,7 @@ func VideoSearch(query string) *SearchClient {
 func GetWatchPlaylist(videoID string) ([]*TrackItem, error) {
 	return getWatchPlaylist(videoID)
 }
+
+func GetSearchSuggestions(input string) ([]string, error) {
+	return getSearchSuggestions(input)
+}

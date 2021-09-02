@@ -459,9 +459,8 @@ func parseVideoItem(videoItem interface{}) *VideoItem {
 	return video
 }
 
-func parsePlaylistPage(page interface{}) []*TrackItem {
-	var contents interface{}
-	contents = getValue(page, path{"contents", "singleColumnMusicWatchNextResultsRenderer", "tabbedRenderer", "watchNextTabbedResultsRenderer", "tabs", 0, "tabRenderer", "content", "musicQueueRenderer", "content", "playlistPanelRenderer", "contents"})
+func parseWatchPlaylist(page interface{}) []*TrackItem {
+	contents := getValue(page, path{"contents", "singleColumnMusicWatchNextResultsRenderer", "tabbedRenderer", "watchNextTabbedResultsRenderer", "tabs", 0, "tabRenderer", "content", "musicQueueRenderer", "content", "playlistPanelRenderer", "contents"})
 	if contents == nil {
 		return nil
 	}
@@ -545,4 +544,20 @@ func parsePlaylistTrack(trackItem interface{}) *TrackItem {
 	}
 
 	return track
+}
+
+func parseSearchSuggestions(page interface{}) []string {
+	contents := getValue(page, path{"contents", 0, "searchSuggestionsSectionRenderer", "contents"})
+	if contents == nil {
+		return nil
+	}
+
+	result := make([]string, len(contents.([]interface{})))
+
+	for index, item := range contents.([]interface{}) {
+		if query := getValue(item, path{"searchSuggestionRenderer", "navigationEndpoint", "searchEndpoint", "query"}); query != nil {
+			result[index] = query.(string)
+		}
+	}
+	return result
 }

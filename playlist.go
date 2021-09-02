@@ -19,5 +19,5 @@ func getWatchPlaylist(videoID string) ([]*TrackItem, error) {
 		return nil, err
 	}
 
-	return parsePlaylistPage(page), nil
+	return parseWatchPlaylist(page), nil
 }
