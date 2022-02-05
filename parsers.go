@@ -15,7 +15,7 @@ func getValue(source interface{}, path path) interface{} {
 				mustBreak = true
 			}
 		case int:
-			if len(value.([]interface{})) != 0 {
+			if len(value.([]interface{})) > element.(int) {
 				value = value.([]interface{})[element.(int)]
 			} else {
 				value = nil
