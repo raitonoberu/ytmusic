@@ -236,6 +236,15 @@ func parseTrackItem(trackItem interface{}) *TrackItem {
 				track.Duration = durationToInt(duration.(string))
 			}
 		}
+		if track.Artists == nil && length > 2 {
+			if artist := getValue(info2.([]interface{})[2], path{"text"}); artist != nil {
+				if str, ok := artist.(string); ok && str != " • " {
+					track.Artists = []Artist{
+						{Name: str},
+					}
+				}
+			}
+		}
 	}
 	if explicit := getValue(trackItem, path{"musicResponsiveListItemRenderer", "badges", 0, "musicInlineBadgeRenderer", "icon", "iconType"}); explicit != nil {
 		if explicit.(string) == "MUSIC_EXPLICIT_BADGE" {
