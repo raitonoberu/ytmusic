@@ -120,7 +120,7 @@ func parseShelf(shelf interface{}) ([]interface{}, itemType, string) {
 	if pageType := getValue(shelfContents, path{0, "musicResponsiveListItemRenderer", "navigationEndpoint", "browseEndpoint", "browseEndpointContextSupportedConfigs", "browseEndpointContextMusicConfig", "pageType"}); pageType != nil {
 		pageType := pageType.(string)
 		switch pageType {
-		case "MUSIC_PAGE_TYPE_ARTIST":
+		case "MUSIC_PAGE_TYPE_ARTIST", "MUSIC_PAGE_TYPE_USER_CHANNEL":
 			{
 				itype = artistItemType
 			}
