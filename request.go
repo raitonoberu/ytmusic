@@ -13,13 +13,13 @@ func makeRequest(endpoint string, body map[string]interface{}, params url.Values
 		"context": map[string]interface{}{
 			"client": map[string]interface{}{
 				"clientName":    "WEB_REMIX",
-				"clientVersion": "1.20210823.00.00",
+				"clientVersion": "1.20220715.04.00",
+				"hl":            Language,
+				"gl":            Region,
 			},
 			"user": map[string]interface{}{
 				"lockedSafetyMode": false,
 			},
-			"hl": Language,
-			"gl": Region,
 		},
 	}
 	for key, item := range body {
