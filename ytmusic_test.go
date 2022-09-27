@@ -60,4 +60,14 @@ func TestLyrics(t *testing.T) {
 	if lyrics == "" {
 		t.Fatal("lyrics == \"\"")
 	}
+
+	lyrics, err = GetLyrics("9Mf6f8TPH_4")
+
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	if lyrics != "" {
+		t.Fatal("lyrics != \"\"")
+	}
 }
