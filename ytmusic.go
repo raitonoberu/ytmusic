@@ -57,3 +57,7 @@ func GetWatchPlaylist(videoID string) ([]*TrackItem, error) {
 func GetSearchSuggestions(input string) ([]string, error) {
 	return getSearchSuggestions(input)
 }
+
+func GetLyrics(videoID string) (string, error) {
+	return getLyrics(videoID)
+}

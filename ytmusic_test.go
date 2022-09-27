@@ -49,3 +49,25 @@ func TestSearch(t *testing.T) {
 		t.Fatal("r.Albums[0].BrowseID == \"\"")
 	}
 }
+
+func TestLyrics(t *testing.T) {
+	lyrics, err := GetLyrics("GICwp59Hags")
+
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	if lyrics == "" {
+		t.Fatal("lyrics == \"\"")
+	}
+
+	lyrics, err = GetLyrics("9Mf6f8TPH_4")
+
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	if lyrics != "" {
+		t.Fatal("lyrics != \"\"")
+	}
+}
