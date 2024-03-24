@@ -9,6 +9,7 @@ func getWatchPlaylist(videoID string) ([]*TrackItem, error) {
 		"next",
 		map[string]interface{}{
 			"videoId":                       videoID,
+			"playlistId":                    "RDAMVM" + videoID,
 			"enablePersistentPlaylistPanel": true,
 			"isAudioOnly":                   true,
 		},

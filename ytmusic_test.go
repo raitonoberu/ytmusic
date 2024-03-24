@@ -71,3 +71,52 @@ func TestLyrics(t *testing.T) {
 		t.Fatal("lyrics != \"\"")
 	}
 }
+
+func TestWatchPlaylist(t *testing.T) {
+	watchPlaylist, err := GetWatchPlaylist("FM7MFYoylVs")
+
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	if len(watchPlaylist) == 0 {
+		t.Fatal("playlist list is empty")
+	}
+
+	// sometimes the playlist will only have 1 song and 1 empty track item
+	if len(watchPlaylist) < 3 {
+		t.Fatal("len(watchPlaylist) < 3")
+	}
+
+	for _, track := range watchPlaylist {
+		if track.VideoID == "" {
+			t.Fatal("track.VideoID == \"\"")
+		}
+		if track.Title == "" {
+			t.Fatal("track.Title == \"\"")
+		}
+	}
+
+	t.Log("Hello")
+
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	if len(watchPlaylist) == 0 {
+		t.Fatal("radio list id empty")
+	}
+
+	if len(watchPlaylist) < 3 {
+		t.Fatal("len(watchPlaylist) < 3")
+	}
+
+	for _, track := range watchPlaylist {
+		if track.VideoID == "" {
+			t.Fatal("track.VideoID == \"\"")
+		}
+		if track.Title == "" {
+			t.Fatal("track.Title == \"\"")
+		}
+	}
+}
